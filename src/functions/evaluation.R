@@ -20,7 +20,7 @@ model_performance_plots = function(
   plot(performance.output.ROC, main="ROC curve", colorize=T)
   abline(a=0, b=1)
   performance.output.prec.rec = performance(prediction.output, "prec", "rec", cost.fp=1, cost.fn=1)
-  plot(performance.output.prec.rec, main="Precision/recall (TPR/TNR) curve", colorize=T, xlim=c(0,1), ylim=c(0,1))
+  plot(performance.output.prec.rec, main="Precision/recall (PPV/Cum. ADR) curve", colorize=T, xlim=c(0,1), ylim=c(0,1))
   abline(a=1, b=-1)
   performance.output.accuracy = performance(prediction.output, "acc", cost.fp=1, cost.fn=1)
   plot(performance.output.accuracy, main="Accuracy vs cutoff")
