@@ -70,6 +70,11 @@ Gini_coefficient = function(
   Gini = 2*auc(input_table_name_df[, names(input_table_name_df)==target_variable_name], p1_prediction_df) - 1
   cat("Gini = ", Gini)
   cat("\n")
+
+#library(WeightedROC)
+#tp.fp <- WeightedROC(p1_prediction_df, input_table_name_df[, names(input_table_name_df)==target_variable_name], input_table_name_df[, names(input_table_name_df)==weight_variable_name])
+#2*WeightedAUC(tp.fp)-1
+
 }
 
 ############################################################################################
