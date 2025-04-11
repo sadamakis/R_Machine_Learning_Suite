@@ -2,6 +2,7 @@
 ############################################################################################
 # Install all the packages
 #install.packages('mlr')
+#install.packages('naniar')
 #install.packages('corrplot')
 #install.packages('neuralnet')
 #install.packages('NeuralNetTools')
@@ -15,6 +16,8 @@
 #install.packages('snow')
 #install.packages('xgboost')
 #install.packages('microbenchmark')
+#install.packages('smbinning')
+#install.packages('glmnet')
 # Install lightgbm manually: https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html#windows
 ############################################################################################
 ############################################################################################
